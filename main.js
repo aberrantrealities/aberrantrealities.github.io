@@ -57,7 +57,7 @@ var stars = [];
 var totalSprites = app.renderer instanceof PIXI.WebGLRenderer ? 2500 : 100;
 
 for (var i = 0; i < totalSprites; i++){
-    var star = PIXI.Sprite.fromImage('/img/pixel.png');
+    var star = PIXI.Sprite.fromImage('img/pixel.png');
     //star.tint = Math.random() * 0xE8D4CD;
     star.anchor.set(0.5);
     star.scale.set(Math.random() * (2 - 1.25) + 1.25);
