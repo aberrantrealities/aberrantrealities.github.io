@@ -1,7 +1,39 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css" src="style.scss"></style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.3.4/pixi.min.js"></script>
+  <script src="main.js"></script>
+</head>
 <body>
-<h1>Aberrant Realities</h1>
-<p>Under construction.</p>
+  <div class="animation-container"></div>
+  <div class="page-wrapper">
+    <div class="panel landing">
+      <h1 class="fullcaps">Aberrant Realities</h1>
+      <h2>we make worlds.</h2>
+      <div class="logo"><img src="/img/logo.png" />
+      </div>
+      <div class="button-group">
+        <div class="button" onclick="showPanel('ourwork')">Our Work</div>
+        <div class="button" onclick="showPanel('about')">About</div>
+        <div class="button" onclick="showPanel('contact')">Contact</div>
+
+      </div>
+    </div>
+    <div class="panel our-work">
+      <div class="close" onclick="showPanel('home')"></div>
+      <h1 class="fullcaps">Our Work</h1>
+    </div>
+    <div class="panel about">
+      <div class="close" onclick="showPanel('home')"></div>
+      <h1 class="fullcaps">About Us</h1>
+      <p>Aberrant Realities is a group of like-minded individuals with a focus on creating interesting VR and non-VR entertainment.</p>
+    </div>
+    <div class="panel contact">
+      <div class="close" onclick="showPanel('home')"></div>
+      <h1 class="fullcaps">Contact</h1></div>
+  </div>
 </body>
 </html>
