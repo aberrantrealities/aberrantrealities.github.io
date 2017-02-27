@@ -38,13 +38,13 @@ function showPanel(val){
 }
 function showStars(){
 //pixiijs code for stars
-var app = new PIXI.Application(3000,3000,{transparent:true});
+var app = new PIXI.Application(2500,2500,{transparent:true});
 jQuery('.animation-container').append(app.view);
 
 var starSpeedMax = 1;
 var starSpeedMin = 0.5;
 
-var sprites = new PIXI.particles.ParticleContainer(2500,{
+var sprites = new PIXI.particles.ParticleContainer(250,{
   scale: true,
   position: true,
   rotation: true,
@@ -55,7 +55,7 @@ app.stage.addChild(sprites);
 
 var stars = [];
 
-var totalSprites = app.renderer instanceof PIXI.WebGLRenderer ? 2500 : 100;
+var totalSprites = app.renderer instanceof PIXI.WebGLRenderer ? 250 : 100;
 
 for (var i = 0; i < totalSprites; i++){
     var star = PIXI.Sprite.fromImage('img/pixel.png');
