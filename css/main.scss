@@ -74,6 +74,7 @@ body {
   border-radius: 5px;
   width: 33.333%;
   transition: all 0.25s ease-out;
+  cursor: pointer;
   &:hover {
     background-color: white;
     color: black;
@@ -92,6 +93,7 @@ body {
 
 .close:hover {
   opacity: 1;
+  cursor: pointer;
 }
 
 .close:before,
