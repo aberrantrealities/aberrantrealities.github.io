@@ -16,7 +16,6 @@ body {
 }
 
 * {
-  //transition: all 0.5s ease-out;
   color: #fff;
   font-family: 'Roboto', sans-serif;
 }
@@ -41,7 +40,6 @@ p {
 .fullcaps {
   text-transform: uppercase;
 }
-
 body {
   display: flex;
   justify-content: center;
@@ -206,4 +204,18 @@ body {
   position: absolute;
   width: 100%;
   bottom: 0;
+}
+
+//mobile rules
+@media all and (max-width:768px){
+  h1{
+    font-size: 1.5em;
+  }
+  h2{
+    font-size: 1em;
+  }
+  .close{
+    top:0;
+    right:0;
+  }
 }
