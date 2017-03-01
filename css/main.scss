@@ -218,8 +218,10 @@ body {
     top:0;
     right:0;
   }
-  .lefthalf,.righthalf{
-    width: 100%;
+  .panel{
+    .lefthalf,.righthalf{
+      width: 100%;
+    }
   }
   .button{
     padding: 10px;
