@@ -182,7 +182,7 @@ body {
 }
 .social{
   width:100%;
-  font-size:40px;
+  font-size:2rem;
   display:flex;
   position:absolute;
   bottom:0;
@@ -191,10 +191,14 @@ body {
     margin-right:auto;
     margin-left:auto;
     i{
-      padding:15px;
+      padding:10px;
       transition: all 0.25s ease-out;
+      border: 1px solid transparent;
       &:hover{
-        filter:invert(1);
+        border: 1px solid white;
+        border-radius: 50px;
+        background-color: white;
+        color: black;
       }
     }
   }
