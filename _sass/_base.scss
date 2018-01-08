@@ -348,4 +348,7 @@ img::-moz-selection {
 body {
     -webkit-tap-highlight-color: $theme-dark;
 }
-
+.doubleshot {
+    background: url('/img/doubleshot.jpg');
+    background-size: cover;
+}
